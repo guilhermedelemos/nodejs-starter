@@ -1,7 +1,7 @@
 {
-  "name": "nodejs-base",
+  "name": "nodejs-starter",
   "version": "1.0.0",
-  "description": "NodeJs Base",
+  "description": "NodeJs Starter (Hapi)",
   "main": "index.js",
   "scripts": {
     "start": "node ./bin/server",
@@ -10,19 +10,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/guilhermedelemos/nodejs-base.git"
+    "url": "git+https://github.com/guilhermedelemos/nodejs-starter.git"
   },
   "keywords": [
     "node",
     "js",
-    "base"
+    "starter"
   ],
   "author": "Guilherme de Lemos",
   "license": "GPL-3.0-only",
   "bugs": {
-    "url": "https://github.com/guilhermedelemos/nodejs-base/issues"
+    "url": "https://github.com/guilhermedelemos/nodejs-starter/issues"
   },
-  "homepage": "https://github.com/guilhermedelemos/nodejs-base#readme",
+  "homepage": "https://github.com/guilhermedelemos/nodejs-starter#readme",
   "dev-dependencies": {
     "nodemon": "1.18.10"
   },
