@@ -7,7 +7,8 @@ const routes = [{
         path: '/',
         handler: (request, h) => {
             return {
-                msg: 'nodejs-base (hapi)'
+                msg: 'nodejs-starter (hapi)',
+                github: 'https://github.com/guilhermedelemos/nodejs-starter/tree/hapijs'
             };
         }
     },
