@@ -1,0 +1,29 @@
+{
+  "name": "nodejs-base",
+  "version": "1.0.0",
+  "description": "NodeJs Base",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/server",
+    "dev": "nodemon ./bin/server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guilhermedelemos/nodejs-base.git"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "base"
+  ],
+  "author": "Guilherme de Lemos",
+  "license": "GPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/guilhermedelemos/nodejs-base/issues"
+  },
+  "homepage": "https://github.com/guilhermedelemos/nodejs-base#readme",
+  "dev-dependencies": {
+    "nodemon": "1.18.10"
+  }
+}
