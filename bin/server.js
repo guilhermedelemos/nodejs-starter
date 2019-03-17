@@ -4,7 +4,7 @@ const Hapi = require('hapi');
 
 const server = Hapi.server({
     port: process.env.PORT || 3000,
-    host: 'localhost'
+    host: process.env.HOST || '0.0.0.0'
 });
 
 server.route(require('../src/routes'));
