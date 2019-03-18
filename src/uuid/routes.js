@@ -1,4 +1,5 @@
 const handler = require('./handler');
+const Joi = require('joi');
 
 const routes = [
     {
@@ -8,7 +9,7 @@ const routes = [
         options: {
             description: 'UUID generator',
             notes: 'Generate UUID v4',
-            tags: ['api']
+            tags: ['api', 'uuid']
         }
     },
     {
@@ -18,7 +19,18 @@ const routes = [
         options: {
             description: 'UUID generator',
             notes: 'Generate UUID v5',
-            tags: ['api']
+            tags: ['api', 'uuid'],
+            validate: {
+                payload: Joi.object({
+                    name: Joi.string()
+                            .required()
+                            .description('"name" to create UUID with.'),
+                    namespace: Joi.string()
+                            .uuid()
+                            .required()
+                            .description('"namespace" UUID as string.'),
+                })
+            }
         }
     }
 ];

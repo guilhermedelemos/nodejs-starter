@@ -17,6 +17,10 @@ const hapiSwagger = {
             {
                 "name": "hash",
                 "description": "Hash algorithms"
+            },
+            {
+                "name": "uuid",
+                "description": "Universally unique identifier"
             }
         ],
         grouping: 'tags', // path || tags
