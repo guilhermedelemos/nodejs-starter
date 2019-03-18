@@ -1,13 +1,14 @@
-const _ = require('lodash');
+const Environment = require('./Environment');
 const plugins = [];
 
-if (process.env.NODE_ENV !== 'production') {
-    plugins.push({
-        plugin: require('blipp'),
-        options: {
-            showAuth: true
-        }
-    });
+// Swagger
+plugins.push(require('inert'));
+plugins.push(require('vision'));
+plugins.push(require('../plugins/hapi-swagger'));
+
+// Not Production (Development)
+if (!Environment.isProduction()) {
+    plugins.push(require('../plugins/blipp'));
     /*plugins.push({
         plugin: require('hapi-pino'),
         options: {

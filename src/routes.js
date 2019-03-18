@@ -8,18 +8,14 @@ const routes = [{
         handler: (request, h) => {
             return {
                 msg: 'nodejs-starter (hapi)',
+                demo: 'https://hapijs-starter.herokuapp.com',
                 github: 'https://github.com/guilhermedelemos/nodejs-starter/tree/hapijs'
             };
-        }
-    },
-    {
-        method: 'GET',
-        path: '/{name}',
-        handler: (request, h) => {
-            return {
-                // msg: 'Hello, ' + encodeURIComponent(request.params.name) + '!',
-                msg: `Hello ${request.params.name}`
-            };
+        },
+        options: {
+            description: 'API root',
+            notes: 'Shows the API name, GitHub URL and the demo heroku app.',
+            tags: ['api'],
         }
     }
 ];
