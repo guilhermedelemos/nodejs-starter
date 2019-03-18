@@ -9,12 +9,13 @@ const routes = [{
             return {
                 msg: 'nodejs-starter (hapi)',
                 demo: 'https://hapijs-starter.herokuapp.com',
-                github: 'https://github.com/guilhermedelemos/nodejs-starter/tree/hapijs'
+                github: 'https://github.com/guilhermedelemos/nodejs-starter/tree/hapijs',
+                documentation: '/documentation'
             };
         },
         options: {
             description: 'API root',
-            notes: 'Shows the API name, GitHub URL and the demo heroku app.',
+            notes: 'Shows the API name, demo app, GitHub URL and documentation endpoint.',
             tags: ['api'],
         }
     }
