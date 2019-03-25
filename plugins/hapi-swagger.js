@@ -19,6 +19,10 @@ const hapiSwagger = {
                 "description": "Hash algorithms"
             },
             {
+                "name": "password",
+                "description": "Password generator"
+            },
+            {
                 "name": "uuid",
                 "description": "Universally unique identifier"
             }
