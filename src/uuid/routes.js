@@ -24,11 +24,13 @@ const routes = [
                 payload: Joi.object({
                     name: Joi.string()
                             .required()
-                            .description('"name" to create UUID with.'),
+                            .description('"name" to create UUID with.')
+                            .default('test'),
                     namespace: Joi.string()
                             .uuid()
                             .required()
-                            .description('"namespace" UUID as string.'),
+                            .description('"namespace" UUID as string.')
+                            .default('791c7cae-81c0-46a3-8f0e-236a9ee613fb'),
                 })
             }
         }

@@ -13,7 +13,8 @@ const routes = [{
                 params: {
                     value : Joi.string()
                             .required()
-                            .description('String to be hashed'),
+                            .description('String to be hashed')
+                            .default('test'),
                 }
             }
         }
@@ -30,7 +31,8 @@ const routes = [{
                 params: {
                     value : Joi.string()
                             .required()
-                            .description('String to be hashed'),
+                            .description('String to be hashed')
+                            .default('test'),
                 }
             }
         }
@@ -47,7 +49,8 @@ const routes = [{
                 params: {
                     value : Joi.string()
                             .required()
-                            .description('String to be hashed'),
+                            .description('String to be hashed')
+                            .default('test'),
                 }
             }
         }
@@ -64,7 +67,8 @@ const routes = [{
                 params: {
                     value : Joi.string()
                             .required()
-                            .description('String to be hashed'),
+                            .description('String to be hashed')
+                            .default('test'),
                 }
             }
         }
@@ -81,7 +85,8 @@ const routes = [{
                 params: {
                     value : Joi.string()
                             .required()
-                            .description('String to be hashed'),
+                            .description('String to be hashed')
+                            .default('test'),
                 }
             }
         }
