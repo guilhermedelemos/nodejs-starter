@@ -68,6 +68,23 @@ const routes = [{
                 }
             }
         }
+    },
+    {
+        method: 'GET',
+        path: '/bcrypt/{value}',
+        handler: handler.hashBcrypt,
+        options: {
+            description: 'BCrypt Hash',
+            notes: 'Calculate a Bcrypt hash of a string.',
+            tags: ['api', 'hash'],
+            validate: {
+                params: {
+                    value : Joi.string()
+                            .required()
+                            .description('String to be hashed'),
+                }
+            }
+        }
     }
 ];
 

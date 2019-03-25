@@ -1,4 +1,6 @@
 var crypto = require('crypto');
+const bcrypt = require('bcrypt');
+
 const hashMd5 = function (request, h) {
     return {
         hash: crypto.createHash('md5').update(request.params.value).digest('hex')
@@ -19,9 +21,13 @@ const hashSha512 = function (request, h) {
         hash: crypto.createHash('sha512').update(request.params.value).digest('hex')
     };
 };
+const hashBcrypt = async function (request, h) {
+    return { hash: bcrypt.hashSync(request.params.value, 10) }
+}
 module.exports = {
     hashMd5,
     hashSha1,
     hashSha256,
-    hashSha512
+    hashSha512,
+    hashBcrypt
 }
