@@ -6,7 +6,7 @@ if (!Environment.isProduction()) {
     require('dotenv').config();
 }
 
-const Hapi = require('hapi');
+const Hapi = require('@hapi/hapi');
 
 const server = Hapi.server({
     port: process.env.PORT || 3001,

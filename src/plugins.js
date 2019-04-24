@@ -2,8 +2,8 @@ const Environment = require('./Environment');
 const plugins = [];
 
 // Swagger
-plugins.push(require('inert'));
-plugins.push(require('vision'));
+plugins.push(require('@hapi/inert'));
+plugins.push(require('@hapi/vision'));
 plugins.push(require('../plugins/hapi-swagger'));
 
 // Not Production (Development)
