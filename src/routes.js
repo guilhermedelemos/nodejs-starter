@@ -1,15 +1,18 @@
 const glob = require('glob');
 const path = require('path');
 const _ = require('lodash');
+var packageJson = require('../package.json');
 
 const routes = [{
         method: 'GET',
         path: '/',
         handler: (request, h) => {
             return {
-                msg: 'nodejs-starter (hapi)',
+                name: `${packageJson.name}`,
+                version: `${packageJson.version}`,
+                description: `${packageJson.description}`,
+                github: `${packageJson.repository.url}`,
                 demo: 'https://hapijs-starter.herokuapp.com',
-                github: 'https://github.com/guilhermedelemos/nodejs-starter/tree/hapijs',
                 documentation: '/documentation'
             };
         },
